@@ -2,11 +2,13 @@
     "name": "gkb/phputils",
     "description": "List of commonly needed but unavailable classes and functions to ease PHP development",
     "license": "MIT License",
+    "version": "1.0.0-beta1",
     "authors": [
         {
             "name": "ganesh",
             "email": "ganeshsurfs@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "keywords": ["array","nested array","modifiers"]
 }
