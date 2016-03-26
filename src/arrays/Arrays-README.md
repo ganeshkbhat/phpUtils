@@ -16,7 +16,7 @@
     Array modifier class and functions handle simple or complex arrays modification recursively
     Passes back new modified array object
         
-    ### Main functions: 
+    MAIN FUNCTIONS: 
         Arrays::call
         Arrays::call_map
         Arrays::call_skip
