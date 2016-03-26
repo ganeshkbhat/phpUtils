@@ -3,7 +3,7 @@ List of commonly used, unavailable, and needed utility functions for PHP current
 
 ## Installation
 
-Install using composer. Use package name `ganeshkbhat/phputils`
+Install using composer. Use package installation command `composer require gkb/phputils`
 
 ## List of Utilities currently available
 
