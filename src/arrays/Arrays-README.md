@@ -125,7 +125,7 @@
 ------------------------------------
 
 
-**Array::itemRunCb:** 
+**Array::itemRunCb** 
 
     Functionality:
         This is a pre-defined modifier-callback-run-check callback returning a boolean value.
@@ -143,7 +143,7 @@
         Boolean    
 
 
-**Array::itemRemoveCb:** 
+**Array::itemRemoveCb** 
 
     Functionality:
         This is a pre-defined modifier callback returning an new modified array.
@@ -164,13 +164,13 @@
 ----------------------------------
 
 
-**array:** 
+**array** 
 
     Array to be modified.
     Can be a simple or complex nested array of any number of nesting.
         
         
-**callback:**
+**callback**
 
     Modifier Callback to run on the array for modification. 
     Compulsorily returns the new array after modification. 
@@ -187,7 +187,7 @@
 `function($arrs, $item, $key, $userdata) { echo "Your Manipulation Code Here"; return $arrs; };`
         
         
-**callbackChecks:**
+**callbackChecks**
 
     Callback to run to check whether the modifier callback should run or skip.
     Compulsorily returns a boolean (true or false). A no return value will be identified as false
@@ -205,7 +205,7 @@
 `function($arrs, $value, $key, $userdata){ return true; };`
         
         
-**userdataForCallback:**
+**userdataForCallback**
 
     Userdata passed is the third or fourth argument of each Arrays class function depending on definition.
     Available as the fourth argument for callbackChecks or callback argument callable functions passed.
@@ -218,7 +218,7 @@
 (Array Object) `array("key"=>"value")`, (Array Object) `[1,2]`, etc.
 
 
-**userdataValueForCallback:**
+**userdataValueForCallback**
 
     Userdata passed is the second argument of `Arrays::removeItem` Arrays class function.
     Available as the fourth argument for callbackChecks or callback argument callable functions passed.
@@ -230,7 +230,7 @@
 (string) `"my new string"`, (integer) `1`, (Boolean) `true`
         
 
-**userdataValuesArrayForCallback:**
+**userdataValuesArrayForCallback**
 
     Userdata passed is the second argument of `Arrays::removeItems` Arrays class function.
     Available as the fourth argument for callbackChecks or callback argument callable functions accessed internally.
