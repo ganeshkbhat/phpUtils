@@ -1,9 +1,3 @@
-## DESCRIPTION:
----------------
-
-`array.php` is a file which contains the class Arrays which handles data modification of Arrays whether complex nested or simple. These arrays can be modified using a callback provided to the respective functions. You can also use a check callback function passed as an argument to do a boolean check of whther a perticular modification callback should be implemented or not. The callbacks, both modification callback and callback-run-check callbacks have access to the main array, each iterations key-value pair, and any user defined parameter provided during the initialization of the Arrays function.  
-
-
 ## DOCUMENT DETAILS:
 --------------------
 
@@ -15,6 +9,19 @@
     Compatibility: PHP 5.6 and above
     Source File: src/arrays/arrays.php
     Example Usage File: src/arrays/usage.php
+
+
+## ARRAYS:
+---------
+
+    Namespace: Arrays
+    Class: Arrays
+
+
+## DESCRIPTION:
+---------------
+
+`array.php` is a file which contains the class Arrays which handles data modification of Arrays whether complex nested or simple. These arrays can be modified using a callback provided to the respective functions. You can also use a check callback function passed as an argument to do a boolean check of whther a perticular modification callback should be implemented or not. The callbacks, both modification callback and callback-run-check callbacks have access to the main array, each iterations key-value pair, and any user defined parameter provided during the initialization of the Arrays function.  
 
 
 ## FUNCTIONS: 
