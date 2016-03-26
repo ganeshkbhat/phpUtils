@@ -149,7 +149,7 @@
 **userdataForCallback:**
 
     Userdata passed is the third or fourth argument of each Arrays class function depending on definition.
-    Available as the fourth argument for the callbackChecks or callback argument callable functions passed.
+    Available as the fourth argument for callbackChecks or callback argument callable functions passed.
     Single variable of any primitive data type. Will not be iterated.
     Can be a single variable or array of variables as per need of both callbacks.
     Can be passed as reference values.
@@ -158,7 +158,7 @@
 **userdataValuesArrayForCallback:**
 
     Userdata passed is the fourth argument of removeItems Arrays class function.
-    Available as the fourth argument for the callbackChecks or callback argument callable functions accessed internally.
+    Available as the fourth argument for callbackChecks or callback argument callable functions accessed internally.
     Array containing any primitive data type items as per need of modification. Will also be iterated.
     Each item of array can be a single variable or array of variables as per need of both callbacks.
     Can be passed as reference values.
