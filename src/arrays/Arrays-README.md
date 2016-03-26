@@ -133,9 +133,12 @@
         The `userdataValueForCallback` or  is matched with the item value and if true return true or vice versa.
         `$itemValue === userdataValueForCallback`.
         Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
-    Usage or Used Internally as:
+    Definition:
         Arrays::itemRunCb(array, itemValue, key, userdataForCallback)
         Arrays::itemRunCb(array, itemValue, key, userdataValueForCallback)
+    Usage or Used Internally as:
+        `Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
+        `$arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
     Returns
         Boolean    
 
@@ -147,9 +150,12 @@
         Uses the `Arrays` class function `Arrays::itemRunCb` to check whether modifier callback `itemRemoveCb` runs.
         Runs the unset function on the itemValue which matchs `userdataValueForCallback` passed.
         Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
-    Usage or Used Internally as:
+    Definition:
         Arrays::itemRemoveCb(array, itemValue, key, userdataForCallback) 
         Arrays::itemRemoveCb(array, itemValue, key, userdataValueForCallback)
+    Usage or Used Internally as:
+        `Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
+        `$arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
     Returns
         New modified array 
 
