@@ -1,4 +1,5 @@
-## Document Details
+## DOCUMENT DETAILS:
+====================
 
     File: arrays.php
     Author: Ganesh Bhat
@@ -10,11 +11,12 @@
     Example Usage File: src/arrays/usage.php
 
 ## FUNCTIONS: 
+=============
 
     Array modifier class and functions handle simple or complex arrays modification recursively
     Passes back new modified array object
         
-    Main functions: 
+    ### Main functions: 
         Arrays::call
         Arrays::call_map
         Arrays::call_skip
@@ -25,7 +27,8 @@
         ToDo: Arrays::removeItems
 
 ## FUNCTION DEFINITIONS:
-
+========================
+*
 Arrays::call
     Functionality: Calls the callback on all items of array after a boolean check from callbackChecks function. Optionally callbackChecks can be specified as null. Both callback and callbackChecks have access to array, each item's key-value, and userdata 
     Usage - Arrays::call(array, callbackChecks, callback, userdataForCallback)
@@ -57,6 +60,7 @@ Arrays::removeItems
     Functionality: Calls the remove callback on all items of array after a boolean check from callbackChecks function. userdataValuesArrayForCallback is a array of identifiers and each item of userdata array can be of any primitive datatype
     Usage - Arrays::removeItems(array, userdataValuesArrayForCallback)
     Returns - New assignable modified array
+*
 
 ARGUMENT DEFINITIONS: 
 
