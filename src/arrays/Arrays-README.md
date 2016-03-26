@@ -129,7 +129,7 @@
 
     Modifier Callback to run on the array for modification. 
     Compulsorily returns the new array after modification. 
-    If no new modified array is returned then all the functions returns an null value.
+    If no new modified array is returned then all the Arrays functions returns an null value.
     
 *callback arguments:*
     Has access to the array to be modified, each iteration's key, each iteration's value, and the passed userdata
