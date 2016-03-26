@@ -31,11 +31,13 @@
     Passes back new modified array object
         
     MAIN FUNCTIONS: 
-        Arrays::call
-        Arrays::call_map
-        Arrays::call_skip
-        Arrays::call_strict
-        Arrays::removeItem
+        public function Arrays::call
+        public function Arrays::call_map
+        public function Arrays::call_skip
+        public function Arrays::call_strict
+        public function Arrays::removeItem
+        public static function Arrays::itemRunCb
+        public static function Arrays::itemRemoveCb
         ToDo: Arrays::removeItems
         ToDo: Arrays::modifyItem
         ToDo: Arrays::removeItems
@@ -119,6 +121,39 @@
         New assignable modified array
 
 
+## PRE-DEFINED CALLBACK FUNCTION DEFINITIONS: 
+------------------------------------
+
+
+**Array::itemRunCb:** 
+
+    Functionality:
+        This is a pre-defined modifier-callback-run-check callback returning a boolean value.
+        Used by the `Arrays` class function `Arrays::removeItem` to check whether modifier callback `itemRemoveCb` should run.
+        The `userdataValueForCallback` or  is matched with the item value and if true return true or vice versa.
+        `$itemValue === userdataValueForCallback`.
+        Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
+    Usage or Used Internally as:
+        Arrays::itemRunCb(array, itemValue, key, userdataForCallback)
+        Arrays::itemRunCb(array, itemValue, key, userdataValueForCallback)
+    Returns
+        Boolean    
+
+
+**Array::itemRemoveCb:** 
+
+    Functionality:
+        This is a pre-defined modifier callback returning an new modified array.
+        Uses the `Arrays` class function `Arrays::itemRunCb` to check whether modifier callback `itemRemoveCb` should run.
+        Runs the unset function on the itemValue which matchs `userdataValueForCallback` passed.
+        Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
+    Usage or Used Internally as:
+        Arrays::itemRemoveCb(array, itemValue, key, userdataForCallback) 
+        Arrays::itemRemoveCb(array, itemValue, key, userdataValueForCallback)
+    Returns
+        New modified array 
+
+
 ## FUNCTIONS ARGUMENT DEFINITIONS: 
 ----------------------------------
 
@@ -142,8 +177,7 @@
     Value is the third argument (internals).
     Userdata passed is the fourth argument (it is passed as final argument for Arrays class function).
 
-
-*Example callback:*
+*Example callback Input:*
 `function($arrs, $item, $key, $userdata) { echo "Your Manipulation Code Here"; return $arrs; };`
         
         
@@ -161,7 +195,7 @@
     Value is the third argument (internals)
     Userdata passed is the fourth argument (it is passed as final (third or fourth) argument for Arrays class function).
  
-*Example callback:*
+*Example callback Input:*
 `function($arrs, $value, $key, $userdata){ return true; };`
         
         
@@ -169,18 +203,34 @@
 
     Userdata passed is the third or fourth argument of each Arrays class function depending on definition.
     Available as the fourth argument for callbackChecks or callback argument callable functions passed.
-    Single variable of any primitive data type. Will not be iterated.
+    Single variable of any primitive data type.
     Can be a single variable or array of variables as per need of both callbacks.
     Can be passed as reference values.
+
+*Possible Value Inputs:*
+(string) `"my new string"`, (integer) `1`, (Boolean) `true`, 
+(Array Object) `array("key"=>"value")`, (Array Object) `[1,2]`, etc.
+
+
+**userdataValueForCallback:**
+
+    Userdata passed is the second argument of `Arrays::removeItem` Arrays class function.
+    Available as the fourth argument for callbackChecks or callback argument callable functions passed.
+    Single variable of any primitive data type based on Array type. Will not be iterated on itself.
+    Can be a single variable or array of variables as per need of both callbacks or array.
+    Similar to `userdataForCallback` usage unless `userdataForCallback` is used as an array.
     
+*Possible Value Inputs:*
+(string) `"my new string"`, (integer) `1`, (Boolean) `true`
+        
     
 **userdataValuesArrayForCallback:**
 
-    Userdata passed is the fourth argument of removeItems Arrays class function.
+    Userdata passed is the second argument of `Arrays::removeItems` Arrays class function.
     Available as the fourth argument for callbackChecks or callback argument callable functions accessed internally.
-    Array containing any primitive data type items as per need of modification. Will also be iterated.
-    Each item of array can be a single variable or array of variables as per need of both callbacks.
-    Can be passed as reference values.
+    Array containing any primitive data type items as per need of modification of array. 
+    Will be iterated on itself within the callbackChecks function.
+    Each item of array can be a single variable or array of variables as per need of both callbacks or array.
 
 
 ## ToDo:
