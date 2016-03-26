@@ -1,5 +1,5 @@
 {
-    "name": "ganeshkbhat/phputils",
+    "name": "gkb/phputils",
     "description": "List of commonly needed but unavailable classes and functions to ease PHP development",
     "license": "MIT License",
     "authors": [
