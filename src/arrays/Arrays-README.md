@@ -166,11 +166,11 @@
 ## ToDo:
 --------
 
-More instantly usable Array modifiers to be added
-New modifiers or array handlers to be added as per request
-Return modified items
-Return unmodified items
-Return new array and all items (new array, modified items, unmodified items)
+    More instantly usable Array modifiers to be added
+    New modifiers or array handlers to be added as per request
+    Return modified items
+    Return unmodified items
+    Return new array and all items (new array, modified items, unmodified items)
 
 # License: 
 ----------
