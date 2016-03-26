@@ -7,7 +7,7 @@ Install using composer. Use package installation command `composer require gkb/p
 
 ## List of Utilities currently available
 
-- Array Modifiers (src/arrays/arrays.php)
+- Array Modifiers Class ([src/arrays/arrays.php](https://github.com/ganeshkbhat/phpUtils/blob/master/src/arrays/arrays.php "Arrays Class source file link"))
 
 
 ## License: 
