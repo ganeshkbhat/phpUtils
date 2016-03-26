@@ -36,11 +36,12 @@
         public function Arrays::call_skip
         public function Arrays::call_strict
         public function Arrays::removeItem
-        public static function Arrays::itemRunCb
-        public static function Arrays::itemRemoveCb
         ToDo: Arrays::removeItems
         ToDo: Arrays::modifyItem
         ToDo: Arrays::removeItems
+    PRE-DEFINED CALLBACK FUNCTIONS:
+        public static function Arrays::itemRunCb
+        public static function Arrays::itemRemoveCb
 
 
 ## FUNCTION DEFINITIONS:
