@@ -144,7 +144,7 @@
 
     Functionality:
         This is a pre-defined modifier callback returning an new modified array.
-        Uses the `Arrays` class function `Arrays::itemRunCb` to check whether modifier callback `itemRemoveCb` should run.
+        Uses the `Arrays` class function `Arrays::itemRunCb` to check whether modifier callback `itemRemoveCb` runs.
         Runs the unset function on the itemValue which matchs `userdataValueForCallback` passed.
         Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
     Usage or Used Internally as:
