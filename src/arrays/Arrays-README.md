@@ -30,15 +30,12 @@
 ------------------------
 
 **Arrays::call**
-*Functionality*: Calls the callback on all items of array after a boolean check from callbackChecks function. Optionally callbackChecks can be specified as null. Both callback and callbackChecks have access to array, each item's key-value, and userdata
 
-*Usage* - Arrays::call(array, callbackChecks, callback, userdataForCallback)
-
-*Returns* - New assignable modified array
-
-Optional Usage - Arrays::call(array, null, callback, userdataForCallback)
-
-*Returns* - New assignable modified array
++*Functionality*: Calls the callback on all items of array after a boolean check from callbackChecks function. Optionally callbackChecks can be specified as null. Both callback and callbackChecks have access to array, each item's key-value, and userdata
++*Usage* - Arrays::call(array, callbackChecks, callback, userdataForCallback)
++*Returns* - New assignable modified array
++*Optional Usage* - Arrays::call(array, null, callback, userdataForCallback)
++*Returns* - New assignable modified array
 
 **Arrays::call_map**
 *Functionality*: Calls the callback on all items of array. callback has access to array, each item's key-value, and userdata
