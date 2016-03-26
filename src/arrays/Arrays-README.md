@@ -31,56 +31,69 @@
 
 **Arrays::call**
 
-    *Functionality*: 
+    Functionality: 
         Calls the callback on all items of array after a boolean check from callbackChecks function. 
         Optionally callbackChecks can be specified as null. 
         Both callback and callbackChecks have access to array, each item's key-value, and userdata
-    *Usage* - Arrays::call(array, callbackChecks, callback, userdataForCallback)
-    *Returns* - New assignable modified array
+    Usage - Arrays::call(array, callbackChecks, callback, userdataForCallback)
+    Returns - New assignable modified array
     *Optional Usage* - Arrays::call(array, null, callback, userdataForCallback)
-    *Returns* - New assignable modified array
+    Returns - New assignable modified array
 
 **Arrays::call_map**
-*Functionality*: 
-    +Calls the callback on all items of array. 
-    +callback has access to array, each item's key-value, and userdata
 
-*Usage* - Arrays::call_map(array, callback, userdataForCallback)
-
-*Returns* - New assignable modified array
+    Functionality: 
+        +Calls the callback on all items of array. 
+        +callback has access to array, each item's key-value, and userdata
+    Usage:
+        Arrays::call_map(array, callback, userdataForCallback)
+    Returns: 
+        New assignable modified array
         
 **Arrays::call_skip**
-*Functionality*: 
-    Calls the callback on all items of array. 
-    callbackChecks specified as null (needed). 
-    callback has access to array, each item's key-value, and userdata
 
-*Usage* - Arrays::call(array, null, callback, userdataForCallback)
-
-*Returns* - New assignable modified array
+    Functionality: 
+        Calls the callback on all items of array. 
+        callbackChecks specified as null (needed). 
+        callback has access to array, each item's key-value, and userdata
+    Usage:
+        Arrays::call(array, null, callback, userdataForCallback)
+    Returns:
+        New assignable modified array
 
 **Arrays::call_strict**
-*Functionality*: Calls the callback on all items of array after a boolean check from callbackChecks function. Compulsorily callbackChecks has to be specified as a boolean returning callable function. Both callback and callbackChecks have access to array, each item's key-value, and userdata
 
-*Usage* - Arrays::call_strict(array, callbackChecks, callback, userdataForCallback)
-
-*Returns* - New assignable modified array
+    Functionality: 
+        Calls the callback on all items of array after a boolean check from callbackChecks function. 
+        Compulsorily callbackChecks has to be specified as a boolean returning callable function. 
+        Both callback and callbackChecks have access to array, each item's key-value, and userdata
+    Usage:
+        Arrays::call_strict(array, callbackChecks, callback, userdataForCallback)
+    Returns: 
+        New assignable modified array
 
 
 **Arrays::removeItem**
-*Functionality*: Calls the remove callback on all items of array after a boolean check from callbackChecks function. userdataValueForCallback is a single identifier and can be of any primitive datatype
 
-*Usage* - Arrays::removeItem(array, userdataValueForCallback)
-
-*Returns* - New assignable modified array
+    Functionality: 
+        Calls the remove callback on all items of array after a boolean check from callbackChecks function. 
+        userdataValueForCallback is a single identifier and can be of any primitive datatype
+    Usage:
+        Arrays::removeItem(array, userdataValueForCallback)
+    Returns
+        New assignable modified array
 
 
 **Arrays::removeItems**
-*Functionality*: Calls the remove callback on all items of array after a boolean check from callbackChecks function. userdataValuesArrayForCallback is a array of identifiers and each item of userdata array can be of any primitive datatype
 
-*Usage* - Arrays::removeItems(array, userdataValuesArrayForCallback)
-
-*Returns* - New assignable modified array
+    Functionality: 
+        Calls the remove callback on all items of array after a boolean check from callbackChecks function. 
+        userdataValuesArrayForCallback is a array of identifiers
+        Each item of userdata array can be of any primitive datatype
+    Usage
+        Arrays::removeItems(array, userdataValuesArrayForCallback)
+    Returns
+        New assignable modified array
 
 
 ## ARGUMENT DEFINITIONS: 
