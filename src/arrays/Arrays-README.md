@@ -108,8 +108,8 @@
         New assignable modified array
 
 
-## ARGUMENT DEFINITIONS: 
-------------------------
+## FUNCTIONS ARGUMENT DEFINITIONS: 
+----------------------------------
 
 
 **array:** 
