@@ -139,8 +139,8 @@
         Arrays::itemRunCb(array, itemValue, key, userdataForCallback)
         Arrays::itemRunCb(array, itemValue, key, userdataValueForCallback)
     Usage or Used Internally as:
-        `Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
-        `$arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
+        Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);
+        $arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);
     Returns
         Boolean    
 
@@ -156,8 +156,8 @@
         Arrays::itemRemoveCb(array, itemValue, key, userdataForCallback) 
         Arrays::itemRemoveCb(array, itemValue, key, userdataValueForCallback)
     Usage or Used Internally as:
-        `Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
-        `$arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);`
+        Arrays::call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);
+        $arraysObject->call_strict($arr, 'Arrays::itemRunCb', 'Arrays::itemRemoveCb', $arrItem);
     Returns
         New modified array 
 
