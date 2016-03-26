@@ -129,7 +129,7 @@
 
     Functionality:
         This is a pre-defined modifier-callback-run-check callback returning a boolean value.
-        Used by the `Arrays` class function `Arrays::removeItem` to check whether modifier callback `itemRemoveCb` runs.
+        Used by `Arrays` class function `Arrays::removeItem` to check whether modifier callback `itemRemoveCb` runs.
         The `userdataValueForCallback` or  is matched with the item value and if true return true or vice versa.
         `$itemValue === userdataValueForCallback`.
         Not needed by Arrays::call, Arrays::call_map, Arrays::call_skip, Arrays::call_strict but can be re-used.
