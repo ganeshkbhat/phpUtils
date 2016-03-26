@@ -223,7 +223,7 @@
 *Possible Value Inputs:*
 (string) `"my new string"`, (integer) `1`, (Boolean) `true`
         
-    
+
 **userdataValuesArrayForCallback:**
 
     Userdata passed is the second argument of `Arrays::removeItems` Arrays class function.
