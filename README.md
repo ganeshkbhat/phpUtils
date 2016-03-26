@@ -11,4 +11,4 @@ Install using composer. Use package name `ganeshkbhat/phputils`
 
 
 ## License: 
-    ### MIT License
+    MIT License
