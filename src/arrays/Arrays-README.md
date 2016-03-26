@@ -36,7 +36,7 @@
         Arrays::call_skip
         Arrays::call_strict
         Arrays::removeItem
-        Arrays::removeItems
+        ToDo: Arrays::removeItems
         ToDo: Arrays::modifyItem
         ToDo: Arrays::removeItems
 
@@ -60,8 +60,8 @@
 **Arrays::call_map**
 
     Functionality: 
-        +Calls the callback on all items of array. 
-        +callback has access to array, each item's key-value, and userdata
+        Calls the callback on all items of array. 
+        callback has access to array, each item's key-value, and userdata
     Usage:
         Arrays::call_map(array, callback, userdataForCallback)
     Returns: 
