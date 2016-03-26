@@ -1,0 +1,12 @@
+{
+    "name": "ganeshkbhat/phputils",
+    "description": "List of commonly needed but unavailable classes and functions to ease PHP development",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "ganesh",
+            "email": "ganeshsurfs@gmail.com"
+        }
+    ],
+    "require": {}
+}
